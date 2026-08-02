@@ -1,148 +1,117 @@
-# 👋 Hi there, I'm Mauro Pereira 
+<p align="center">
+  <img src="./assets/meteor-forge.svg" alt="Mauro Pereira - local-first product builder" width="100%">
+</p>
 
-<div align="center">
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=500&amp;size=18&amp;duration=2600&amp;pause=900&amp;color=79B77E&amp;center=true&amp;vCenter=true&amp;repeat=true&amp;width=640&amp;height=42&amp;lines=Happiness+Engineer+%40+Automattic;Builder+of+Moldavite;Local-first+by+default;Good+tools+respect+their+users" alt="Typing animation introducing Mauro">
+  </a>
+</p>
 
-**Happiness Engineer @ Automattic**
+<p align="center">
+  <a href="https://automattic.com"><img src="https://img.shields.io/badge/Automattic-Happiness_Engineer-111111?style=flat-square&amp;logo=automattic&amp;logoColor=white" alt="Happiness Engineer at Automattic"></a>
+  <a href="https://wordpress.com"><img src="https://img.shields.io/badge/WordPress.com-people_%2B_systems-21759B?style=flat-square&amp;logo=wordpress&amp;logoColor=white" alt="WordPress.com"></a>
+  <img src="https://img.shields.io/badge/based_in-Portugal-28563C?style=flat-square" alt="Based in Portugal">
+</p>
 
-[![WordPress](https://img.shields.io/badge/WordPress.com-Happiness%20Engineer-21759B?logo=wordpress&logoColor=white)](https://wordpress.com)
-[![Automattic](https://img.shields.io/badge/Automattic-Team%20Member-3858E9?logo=automattic&logoColor=white)](https://automattic.com)
-[![Portugal](https://img.shields.io/badge/Based%20in-Portugal%20🇵🇹-green)](https://github.com/mauropereiira)
+## I build software that gives control back
 
-</div>
+I'm a **Happiness Engineer at Automattic** and an independent product builder in Portugal. Support taught me where software actually hurts; building taught me how much better it can feel.
 
----
+My favorite tools are calm, inspectable, and local-first. They use ordinary files, make network behavior obvious, and give humans the final say when agents enter the room.
 
-## 🚀 About Me
+<p align="center">
+  <code>plain files</code> &nbsp;→&nbsp; <code>useful structure</code> &nbsp;→&nbsp; <code>safer automation</code> &nbsp;→&nbsp; <code>more human agency</code>
+</p>
 
-I'm a **Happiness Engineer at Automattic**, helping power millions of websites on WordPress.com while building tools that make support teams more productive. Based in Portugal, I combine customer support expertise with software development to create practical solutions for real-world problems.
+## Currently forging
 
-### What I Do:
-- 💬 **Support WordPress.com users** - Solving complex technical issues daily
-- 🛠️ **Build productivity tools** - Chrome extensions and automation for support workflows
-- 📊 **Optimize workflows** - Creating systems that help teams work smarter
-- 🌍 **Work remotely** - Part of Automattic's globally distributed team
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <p align="center"><img src="https://raw.githubusercontent.com/mauropereiira/Moldavite/main/src-tauri/icons/icon.png" width="82" alt="Moldavite icon"></p>
+      <h3 align="center"><a href="https://github.com/mauropereiira/Moldavite">Moldavite</a></h3>
+      <p align="center"><strong>A notes app that never takes your notes.</strong></p>
+      <p>Private, local-first notes for macOS. Plain Markdown, encrypted locking, semantic search, a capability-gated plugin system, and a built-in MCP server for agents you choose to trust.</p>
+      <p align="center">
+        <a href="https://github.com/mauropereiira/Moldavite/releases/latest"><img src="https://img.shields.io/github/v/release/mauropereiira/Moldavite?style=flat-square&amp;color=65986a&amp;label=download" alt="Download Moldavite"></a>
+        <a href="https://mauropereiira.github.io/Moldavite/"><img src="https://img.shields.io/badge/read-the_guide-c9a227?style=flat-square" alt="Read Moldavite guide"></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <p align="center" style="font-size: 56px">🧰</p>
+      <h3 align="center"><a href="https://github.com/mauropereiira/moldavite-skills">Moldavite Skills</a></h3>
+      <p align="center"><strong>Portable skills for notes, Forges, and agents.</strong></p>
+      <p>A focused Agent Skills pack covering Moldavite Markdown, Forge navigation, MCP, daily notes, and migration. Works with Claude Code, Codex, OpenCode, and other skills-compatible agents.</p>
+      <p align="center">
+        <a href="https://mauropereiira.github.io/moldavite-skills/"><img src="https://img.shields.io/badge/explore-the_skills-65986a?style=flat-square" alt="Explore Moldavite Skills"></a>
+        <a href="https://github.com/mauropereiira/moldavite-skills"><img src="https://img.shields.io/github/stars/mauropereiira/moldavite-skills?style=flat-square&amp;color=c9a227" alt="Moldavite Skills stars"></a>
+      </p>
+    </td>
+  </tr>
+</table>
 
-### Currently:
-- 🔨 Maintaining [Support Toolkit](https://github.com/mauropereiira/support-toolkit) - A Chrome extension used by Happiness Engineers
-- 📚 Learning advanced JavaScript patterns and Chrome Extension APIs
-- 🎯 Exploring AI integration for customer support tools
-- 🌱 Contributing to open source projects
+## The Moldavite orbit
 
----
+```mermaid
+flowchart LR
+    H["Your thoughts"] --> F["Forge · plain Markdown"]
+    F --> M["Moldavite"]
+    M --> S["Search · links · graph"]
+    M --> P["Permissioned plugins"]
+    M --> A["Local MCP server"]
+    K["Moldavite Skills"] --> A
+    A --> C["Agents you choose"]
+    C -. "writes require permission" .-> F
+```
 
-## 🏆 Featured Projects
+## Workbench
 
-### [Support Toolkit](https://github.com/mauropereiira/support-toolkit) - Chrome Extension
-**A productivity suite for Happiness Engineers working in Zendesk**
+<p>
+  <img src="https://img.shields.io/badge/TypeScript-10251B?style=flat-square&amp;logo=typescript&amp;logoColor=79B77E" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Rust-10251B?style=flat-square&amp;logo=rust&amp;logoColor=C9A227" alt="Rust">
+  <img src="https://img.shields.io/badge/React-10251B?style=flat-square&amp;logo=react&amp;logoColor=79B77E" alt="React">
+  <img src="https://img.shields.io/badge/Tauri_2-10251B?style=flat-square&amp;logo=tauri&amp;logoColor=C9A227" alt="Tauri 2">
+  <img src="https://img.shields.io/badge/WordPress-10251B?style=flat-square&amp;logo=wordpress&amp;logoColor=79B77E" alt="WordPress">
+  <img src="https://img.shields.io/badge/Markdown-10251B?style=flat-square&amp;logo=markdown&amp;logoColor=C9A227" alt="Markdown">
+  <img src="https://img.shields.io/badge/MCP-10251B?style=flat-square&amp;logoColor=79B77E" alt="Model Context Protocol">
+  <img src="https://img.shields.io/badge/macOS-10251B?style=flat-square&amp;logo=apple&amp;logoColor=C9A227" alt="macOS">
+</p>
 
-[![Chrome Web Store](https://img.shields.io/badge/Chrome-Web%20Store-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/support-toolkit/gnjghfobmfiilldpoedmjfdfehkohefk)
-[![Version](https://img.shields.io/badge/version-2.5.0-blue.svg)](https://github.com/mauropereiira/support-toolkit)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/mauropereiira/support-toolkit/blob/main/LICENSE)
-
-**Features:**
-- 📊 Real-time interaction tracking (chats & tickets)
-- ⏰ Shift management with ICS calendar integration
-- 🤖 AI-powered assistance (Google Gemini integration)
-- 📝 Built-in notes system
-- 📈 Statistics and analytics dashboard
-- 🎨 Seasonal themes with glassmorphism UI
-
-**Tech Stack:** Vanilla JavaScript (ES6+), Chrome Extension Manifest V3, CSS3, Chrome Storage API
-
-**Impact:** Built for Automattic's Happiness Engineers to streamline support workflows and track productivity metrics.
-
----
-
-## 💻 Tech Stack
-
-### Languages
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-
-### Technologies & Tools
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Chrome Extensions](https://img.shields.io/badge/Chrome%20Extensions-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
-
-### Currently Learning
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![AI Integration](https://img.shields.io/badge/AI%20APIs-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-![Mauro's GitHub Stats](https://github-readme-stats.vercel.app/api?username=mauropereiira&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mauropereiira&layout=compact&theme=tokyonight&hide_border=true)
-
-</div>
-
----
-
-## 🎯 What I'm Focused On
-
-```javascript
-const mauro = {
-  role: "Happiness Engineer @ Automattic",
-  location: "Portugal 🇵🇹",
-  interests: ["Chrome Extensions", "Productivity Tools", "Customer Support", "AI Integration"],
-  currentProjects: ["Support Toolkit", "Workflow Automation"],
-  learning: ["TypeScript", "Advanced Chrome APIs", "AI/ML Integration"],
-  funFact: "I build tools for the people who help millions of users every day"
+```ts
+const currently = {
+  shipping: "Moldavite",
+  teaching: "agents to work safely with local notes",
+  dayJob: "helping WordPress.com users untangle hard problems",
+  bias: ["local-first", "privacy", "boring files", "sharp tools"],
 };
 ```
 
----
+## Activity from the forge
 
-## 🌟 Highlights
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mauropereiira&amp;bg_color=00000000&amp;color=79B77E&amp;line=C9A227&amp;point=FFFFFF&amp;area=true&amp;area_color=28563C&amp;hide_border=true&amp;custom_title=Things%20leaving%20the%20forge" width="100%" alt="Mauro's GitHub contribution activity">
+</p>
 
-- ✨ **Published Chrome Extension** - [Support Toolkit](https://chromewebstore.google.com/detail/support-toolkit/gnjghfobmfiilldpoedmjfdfehkohefk) on Chrome Web Store
-- 🏢 **Working at Automattic** - Part of the team behind WordPress.com
-- 🛠️ **Open Source** - All my projects are open source and MIT licensed
-- 📈 **Real-world Impact** - Tools used by support professionals daily
-- 🌍 **Remote Work** - Fully distributed team, working from Portugal
-
----
-
-## 📫 Let's Connect
-
-<div align="center">
-
-[![Email](https://img.shields.io/badge/Email-mauro.brito%40hotmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mauro.brito@hotmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-mauropereiira-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mauropereiira)
-[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Support%20Toolkit-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/support-toolkit/gnjghfobmfiilldpoedmjfdfehkohefk)
-
-</div>
-
+<details>
+  <summary><strong>☄️ Open the meteorite drawer</strong></summary>
+  <br>
+  <p><strong>Why Moldavite?</strong> Moldavite is green glass formed when a meteorite impact fused earth and sky. Good tools do something similar: they turn scattered fragments into a form you can hold, inspect, and make your own.</p>
+  <pre>
+       stray thoughts       clear structure
+             \                 /
+              \    impact     /
+               \      ↓      /
+                something new
+  </pre>
+</details>
 
 ---
 
-<div align="center">
+<p align="center">
+  <a href="https://github.com/mauropereiira/Moldavite">Moldavite</a> ·
+  <a href="https://github.com/mauropereiira/moldavite-skills">Moldavite Skills</a> ·
+  <a href="https://github.com/mauropereiira?tab=repositories">Everything else</a>
+</p>
 
-### 💭 Developer Quote
-
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
-
----
-
-**"Building tools that make people's work easier, one commit at a time."**
-
-![Profile Views](https://komarev.com/ghpvc/?username=mauropereiira&color=blue&style=flat-square)
-
-</div>
-
----
-
-<div align="center">
-
-**⭐ If you like my projects, consider giving them a star!**
-
-</div>
+<p align="center"><sub>Built from Portugal with Markdown, curiosity, and unreasonable care for where data lives.</sub></p>
