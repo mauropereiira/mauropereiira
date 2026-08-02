@@ -35,10 +35,12 @@
     .star-a { animation: twinkle 2.8s ease-in-out infinite; }
     .star-b { animation: twinkle 3.7s ease-in-out 1.1s infinite; }
     .star-c { animation: twinkle 4.4s ease-in-out 0.4s infinite; }
+    .impact-pulse { animation: pulse 6s ease-in-out infinite; }
     @keyframes orbit { to { stroke-dashoffset: -120; } }
     @keyframes twinkle { 0%, 100% { opacity: 0.2; } 50% { opacity: 0.95; } }
+    @keyframes pulse { 0%, 100% { opacity: 0.65; } 50% { opacity: 1; } }
     @media (prefers-reduced-motion: reduce) {
-      .orbit, .star-a, .star-b, .star-c { animation: none; }
+      .orbit, .star-a, .star-b, .star-c, .impact-pulse { animation: none; }
     }
   </style>
 
@@ -56,7 +58,7 @@
     <circle class="star-a" cx="960" cy="176" r="1.5"/>
   </g>
 
-  <circle cx="820" cy="147" r="116" fill="url(#impact)"/>
+  <circle cx="820" cy="147" r="116" fill="url(#impact)" class="impact-pulse"/>
   <circle cx="820" cy="147" r="72" fill="none" stroke="#75a57a" stroke-width="1" opacity="0.22"/>
   <circle cx="820" cy="147" r="98" fill="none" stroke="#9dc183" stroke-width="1.5" stroke-dasharray="8 12" opacity="0.42" class="orbit"/>
   <circle cx="820" cy="147" r="42" fill="#122e20" stroke="#8ab389" stroke-width="2"/>
@@ -69,17 +71,25 @@
     <animateTransform attributeName="transform" type="translate" values="-170 -60; 250 115; 250 115" keyTimes="0;0.58;1" dur="7s" repeatCount="indefinite"/>
   </g>
 
+  <g filter="url(#glow)" opacity="0.55">
+    <path d="M640 18 L736 56" stroke="url(#meteor)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <circle cx="737" cy="56" r="3.5" fill="#f2d86f"/>
+    <animateTransform attributeName="transform" type="translate" values="-120 -50; 210 90; 210 90" keyTimes="0;0.46;1" dur="11s" begin="3.2s" repeatCount="indefinite"/>
+  </g>
+
   <text x="58" y="63" class="eyebrow">HELLO FROM PORTUGAL / EARTH</text>
   <text x="58" y="132" class="name">Mauro Pereira</text>
-  <text x="58" y="176" class="tagline">Local-first tools for humans</text>
-  <text x="58" y="207" class="tagline">and the agents they choose to trust.</text>
+  <text x="58" y="176" class="tagline">Building local-first tools</text>
+  <text x="58" y="207" class="tagline">out of plain Markdown and stubbornness.</text>
 
   <g transform="translate(58 236)">
     <rect width="142" height="30" rx="15" fill="#28563c"/>
     <text x="71" y="20" text-anchor="middle" class="chip">MOLDAVITE</text>
-    <rect x="153" width="154" height="30" rx="15" fill="#1c3d2c" stroke="#4e7d5c"/>
-    <text x="230" y="20" text-anchor="middle" class="chip">WORDPRESS.COM</text>
-    <rect x="318" width="126" height="30" rx="15" fill="#2c2a19" stroke="#756c31"/>
-    <text x="381" y="20" text-anchor="middle" class="chip">OPEN SOURCE</text>
+    <rect x="153" width="86" height="30" rx="15" fill="#16323a" stroke="#4a7d86"/>
+    <text x="196" y="20" text-anchor="middle" class="chip">ODIN</text>
+    <rect x="250" width="154" height="30" rx="15" fill="#1c3d2c" stroke="#4e7d5c"/>
+    <text x="327" y="20" text-anchor="middle" class="chip">WORDPRESS.COM</text>
+    <rect x="415" width="126" height="30" rx="15" fill="#2c2a19" stroke="#756c31"/>
+    <text x="478" y="20" text-anchor="middle" class="chip">OPEN SOURCE</text>
   </g>
 </svg>
