@@ -1,6 +1,7 @@
-<p align="center">
-  <img src="./assets/meteor-forge.svg" alt="Mauro Pereira — local-first product builder" width="100%">
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mauropereiira/Moldavite/main/docs/banner-dark.png">
+  <img src="https://raw.githubusercontent.com/mauropereiira/Moldavite/main/docs/banner-light.png" alt="Moldavite" width="100%">
+</picture>
 
 <p align="center">
   <a href="https://git.io/typing-svg">
@@ -17,7 +18,7 @@ If any of my apps disappeared tomorrow, your data would still be a folder of fil
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/mauropereiira/Moldavite"><img src="https://raw.githubusercontent.com/mauropereiira/Moldavite/main/docs/media/graph-poster.jpg" width="100%" alt="Moldavite graph view"></a>
+      <a href="https://github.com/mauropereiira/Moldavite"><img src="https://raw.githubusercontent.com/mauropereiira/Moldavite/main/docs/og-image.png" width="100%" alt="Moldavite wordmark"></a>
       <h3 align="center"><a href="https://github.com/mauropereiira/Moldavite">Moldavite</a></h3>
       <p align="center"><strong>Private notes for macOS that stay yours.</strong></p>
       <p>Notes live as plain Markdown in folders called Forges. On top of that: encrypted locking, semantic search, a link graph, permission-gated plugins, and a local MCP server so the agents you pick can work with your notes. Tauri 2, Rust, React.</p>
