@@ -1,95 +1,132 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
   <title id="title">Mauro Pereira - local-first product builder</title>
-  <desc id="desc">An animated meteor crosses a mineral-green sky beside Mauro Pereira's name.</desc>
+  <desc id="desc">Mauro Pereira's name, set with Moldavite's mirrored signature glyphs, beside a static impact mark.</desc>
+
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#07130f"/>
-      <stop offset="0.52" stop-color="#10251b"/>
-      <stop offset="1" stop-color="#193d2b"/>
+    <path id="signature-a" d="M2531 142.75Q2531 164.5 2520.75 179.875Q2510.5 195.25 2489.25 203.75Q2468 212.25 2434 212.25Q2395 212.25 2360.125 202.125Q2325.25 192 2294.75 170.25V225.25Q2303.75 236 2325.375 249.5Q2347 263 2380.5 273.125Q2414 283.25 2460.5 283.25Q2546.25 283.25 2593.5 243.5Q2640.75 203.75 2640.75 137Q2640.75 90 2618.5 57.125Q2596.25 24.25 2559.375 7.125Q2522.5 -10 2479.75 -10Q2439.25 -10 2400.875 4.625Q2362.5 19.25 2337.125 48.875Q2311.75 78.5 2311.75 122.5L2327.75 182.5Q2327.75 148 2343.75 122.75Q2359.75 97.5 2386.25 84.125Q2412.75 70.75 2445.25 70.75Q2470 70.75 2489.5 79Q2509 87.25 2520 103.625Q2531 120 2531 142.75ZM2565.25 340Q2554.75 347.25 2534.5 357.625Q2514.25 368 2485.875 375.625Q2457.5 383.25 2425 383.25Q2404 383.25 2386 379.125Q2368 375 2354.875 366.125Q2341.75 357.25 2334.75 342.875Q2327.75 328.5 2327.75 307.25V0H2221.5V327.5Q2221.5 373.75 2246.125 405.625Q2270.75 437.5 2314.375 454.375Q2358 471.25 2414.75 471.25Q2479.25 471.25 2528.5 453Q2577.75 434.75 2609.25 415.75Z"/>
+    <linearGradient id="impact-streak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--ink)" stop-opacity="0"/>
+      <stop offset="0.7" stop-color="var(--ink)" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="var(--ink)" stop-opacity="0.82"/>
     </linearGradient>
-    <radialGradient id="impact" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#e7d77c" stop-opacity="0.75"/>
-      <stop offset="0.28" stop-color="#9dc183" stop-opacity="0.32"/>
-      <stop offset="1" stop-color="#9dc183" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="meteor" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#9dc183" stop-opacity="0"/>
-      <stop offset="0.72" stop-color="#d4e8c8" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#f2d86f"/>
-    </linearGradient>
-    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
   <style>
-    .eyebrow { fill: #9dc183; font: 600 14px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 3px; }
-    .name { fill: #f4f7f2; font: 700 54px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: -1.5px; }
-    .tagline { fill: #c8d4ca; font: 400 20px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .chip { fill: #e6eee5; font: 600 12px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.5px; }
-    .orbit { animation: orbit 8s linear infinite; }
-    .star-a { animation: twinkle 2.8s ease-in-out infinite; }
-    .star-b { animation: twinkle 3.7s ease-in-out 1.1s infinite; }
-    .star-c { animation: twinkle 4.4s ease-in-out 0.4s infinite; }
-    .impact-pulse { animation: pulse 6s ease-in-out infinite; }
-    @keyframes orbit { to { stroke-dashoffset: -120; } }
-    @keyframes twinkle { 0%, 100% { opacity: 0.2; } 50% { opacity: 0.95; } }
-    @keyframes pulse { 0%, 100% { opacity: 0.65; } 50% { opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) {
-      .orbit, .star-a, .star-b, .star-c, .impact-pulse { animation: none; }
+    :root {
+      --ground: #f9f6ed;
+      --ink: #0e0d0a;
+      --mute: #77746b;
+      --faint: #aaa69c;
+      --rule: #d9d5ca;
+      --tektite: #2e5b3c;
     }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ground: #14120c;
+        --ink: #f9f6ed;
+        --mute: #a4a096;
+        --faint: #716e66;
+        --rule: #39362e;
+        --tektite: #7fb58c;
+      }
+    }
+
+    .eyebrow,
+    .project,
+    .diagram-label {
+      font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      text-transform: uppercase;
+    }
+
+    .eyebrow {
+      fill: var(--mute);
+      font-size: 12px;
+      font-weight: 650;
+      letter-spacing: 2.4px;
+    }
+
+    .name {
+      fill: var(--ink);
+      font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 54px;
+      font-weight: 650;
+      letter-spacing: -2.2px;
+    }
+
+    .tagline {
+      fill: var(--mute);
+      font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 19px;
+      font-weight: 420;
+    }
+
+    .project {
+      fill: var(--mute);
+      font-size: 10.5px;
+      font-weight: 650;
+      letter-spacing: 1.2px;
+    }
+
+    .diagram-label {
+      fill: var(--faint);
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+    }
+
+    .project-active { fill: var(--ink); }
+    .rule { stroke: var(--rule); }
+    .star { fill: var(--ink); }
   </style>
 
-  <rect width="1000" height="300" rx="22" fill="url(#background)"/>
-  <path d="M0 246 C190 210 352 286 526 252 C706 217 846 236 1000 188 V300 H0Z" fill="#091b13" opacity="0.8"/>
-  <path d="M0 266 C184 230 350 302 542 270 C735 237 850 264 1000 216" fill="none" stroke="#2c5a40" stroke-width="1" opacity="0.55"/>
+  <rect width="1000" height="300" fill="var(--ground)"/>
+  <line x1="56" y1="229.5" x2="944" y2="229.5" class="rule" stroke-width="1"/>
+  <line x1="566.5" y1="31" x2="566.5" y2="210" class="rule" stroke-width="1"/>
 
-  <g fill="#dcebd8">
-    <circle class="star-a" cx="596" cy="48" r="1.8"/>
-    <circle class="star-b" cx="684" cy="78" r="1.3"/>
-    <circle class="star-c" cx="938" cy="48" r="1.6"/>
-    <circle class="star-a" cx="882" cy="92" r="1.1"/>
-    <circle class="star-b" cx="760" cy="35" r="1.4"/>
-    <circle class="star-c" cx="650" cy="188" r="1.2"/>
-    <circle class="star-a" cx="960" cy="176" r="1.5"/>
+  <rect x="56" y="42" width="4" height="4" fill="var(--ink)"/>
+  <text x="70" y="48" class="eyebrow">HELLO FROM PORTUGAL / EARTH</text>
+
+  <g aria-label="Mauro Pereira">
+    <text x="56" y="126" class="name">M</text>
+    <g transform="translate(-59.1 126) scale(0.073 -0.073)" fill="var(--ink)">
+      <use href="#signature-a"/>
+    </g>
+    <text x="132" y="126" class="name">uro</text>
+    <text x="235" y="126" class="name">Pereira</text>
   </g>
 
-  <circle cx="820" cy="147" r="116" fill="url(#impact)" class="impact-pulse"/>
-  <circle cx="820" cy="147" r="72" fill="none" stroke="#75a57a" stroke-width="1" opacity="0.22"/>
-  <circle cx="820" cy="147" r="98" fill="none" stroke="#9dc183" stroke-width="1.5" stroke-dasharray="8 12" opacity="0.42" class="orbit"/>
-  <circle cx="820" cy="147" r="42" fill="#122e20" stroke="#8ab389" stroke-width="2"/>
-  <path d="M794 157 L808 125 L840 116 L852 145 L832 174 L803 177Z" fill="#77a879" opacity="0.92"/>
-  <path d="M808 125 L823 144 L840 116 M823 144 L852 145 M823 144 L832 174 M823 144 L803 177" fill="none" stroke="#b9d1ad" stroke-width="1.4" opacity="0.75"/>
+  <text x="56" y="166" class="tagline">Building local-first tools</text>
+  <text x="56" y="195" class="tagline">from plain Markdown and stubbornness.</text>
 
-  <g filter="url(#glow)">
-    <path d="M520 52 L706 118" stroke="url(#meteor)" stroke-width="5" stroke-linecap="round" opacity="0.72"/>
-    <circle cx="708" cy="119" r="6" fill="#f2d86f"/>
-    <animateTransform attributeName="transform" type="translate" values="-170 -60; 250 115; 250 115" keyTimes="0;0.58;1" dur="7s" repeatCount="indefinite"/>
+  <g aria-hidden="true">
+    <circle cx="814" cy="120" r="76" fill="none" class="rule" stroke-width="1"/>
+    <ellipse cx="814" cy="120" rx="118" ry="55" fill="none" class="rule" stroke-width="1" transform="rotate(-18 814 120)"/>
+    <line x1="636" y1="188" x2="932" y2="76" stroke="url(#impact-streak)" stroke-width="2"/>
+    <circle cx="932" cy="76" r="3.5" fill="var(--ink)"/>
+
+    <g transform="translate(108 190) scale(0.29 -0.29)" fill="var(--tektite)">
+      <use href="#signature-a"/>
+    </g>
+
+    <g class="star">
+      <circle cx="621" cy="57" r="1.3" opacity="0.48"/>
+      <circle cx="657" cy="112" r="1.8" opacity="0.7"/>
+      <circle cx="713" cy="43" r="1.1" opacity="0.34"/>
+      <circle cx="897" cy="47" r="1.6" opacity="0.56"/>
+      <circle cx="953" cy="137" r="1.1" opacity="0.38"/>
+      <circle cx="915" cy="184" r="1.4" opacity="0.46"/>
+    </g>
+
+    <text x="704" y="207" class="diagram-label">SIGNATURE / MIRRORED AT IMPACT</text>
   </g>
 
-  <g filter="url(#glow)" opacity="0.55">
-    <path d="M640 18 L736 56" stroke="url(#meteor)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
-    <circle cx="737" cy="56" r="3.5" fill="#f2d86f"/>
-    <animateTransform attributeName="transform" type="translate" values="-120 -50; 210 90; 210 90" keyTimes="0;0.46;1" dur="11s" begin="3.2s" repeatCount="indefinite"/>
-  </g>
-
-  <text x="58" y="63" class="eyebrow">HELLO FROM PORTUGAL / EARTH</text>
-  <text x="58" y="132" class="name">Mauro Pereira</text>
-  <text x="58" y="176" class="tagline">Building local-first tools</text>
-  <text x="58" y="207" class="tagline">out of plain Markdown and stubbornness.</text>
-
-  <g transform="translate(58 236)">
-    <rect width="142" height="30" rx="15" fill="#28563c"/>
-    <text x="71" y="20" text-anchor="middle" class="chip">MOLDAVITE</text>
-    <rect x="153" width="86" height="30" rx="15" fill="#16323a" stroke="#4a7d86"/>
-    <text x="196" y="20" text-anchor="middle" class="chip">ODIN</text>
-    <rect x="250" width="154" height="30" rx="15" fill="#1c3d2c" stroke="#4e7d5c"/>
-    <text x="327" y="20" text-anchor="middle" class="chip">WORDPRESS.COM</text>
-    <rect x="415" width="126" height="30" rx="15" fill="#2c2a19" stroke="#756c31"/>
-    <text x="478" y="20" text-anchor="middle" class="chip">OPEN SOURCE</text>
-  </g>
+  <rect x="56" y="248" width="3" height="15" fill="var(--ink)"/>
+  <text x="70" y="259" class="project project-active">Moldavite</text>
+  <text x="164" y="259" class="project" fill="var(--faint)">/</text>
+  <text x="184" y="259" class="project">Odin</text>
+  <text x="239" y="259" class="project" fill="var(--faint)">/</text>
+  <text x="259" y="259" class="project">WordPress.com</text>
+  <text x="393" y="259" class="project" fill="var(--faint)">/</text>
+  <text x="413" y="259" class="project">Open source</text>
 </svg>
